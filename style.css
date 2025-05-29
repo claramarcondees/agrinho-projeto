@@ -86,3 +86,12 @@ h2 {
   font-weight: 700;
   min-height: 22px;
 }
+
+#site-content {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+#site-content.show {
+  opacity: 1;
+}
