@@ -31,3 +31,5 @@ botaoVerificar.addEventListener('click', () => {
     mensagemJogo.textContent = '❌ Tente novamente!';
   }
 });
+
+

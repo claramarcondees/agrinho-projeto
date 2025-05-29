@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #1b3a24; 
+  background-color: #1b3a24; /* verde escuro sólido */
   color: #c8f7c5; 
   margin: 0;
   padding: 0 20px 40px 20px;
@@ -14,21 +14,83 @@ header {
   color: #c8f7c5;
 }
 
+.secao {
+  background-color: #25582a; /* verde médio */
+  border-radius: 12px;
+  padding: 25px 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+  border: 2px solid #3d7d3a;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.secao:hover {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+  transform: translateY(-5px);
+}
+
+.secao h2 {
+  color: #9fdca8;
+  margin-bottom: 15px;
+  font-weight: 700;
+  border-bottom: 2px solid #7ecc83;
+  padding-bottom: 5px;
+}
+
+.secao .conteudo-expandido {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  color: #d7f0cb;
+  font-size: 0.95em;
+  line-height: 1.5em;
+  margin-top: 10px;
+}
+
+.secao .conteudo-expandido.open {
+  max-height: 600px;
+  margin-top: 15px;
+}
+
+.secao .botao-expandir {
+  cursor: pointer;
+  background-color: #7ecc83;
+  color: #1b3a24;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 25px;
+  font-weight: 700;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+.secao .botao-expandir:hover {
+  background-color: #67b066;
+}
+
+
 h2 {
   color: #9fdca8;
-  margin-bottom: 12px;
+  margin-bottom: 15px;
   font-weight: 700;
+  border-bottom: 2px solid #7ecc83;
+  padding-bottom: 5px;
 }
 
 .expandable-content {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease;
+  color: #d7f0cb;
+  font-size: 0.95em;
+  line-height: 1.5em;
+  margin-top: 10px;
 }
 
 .expandable-content.open {
   max-height: 600px;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .expand-btn {
@@ -36,11 +98,12 @@ h2 {
   background-color: #7ecc83;
   color: #1b3a24;
   border: none;
-  padding: 8px 16px;
-  border-radius: 20px;
+  padding: 8px 18px;
+  border-radius: 25px;
   font-weight: 700;
-  margin-top: 10px;
+  margin-top: 15px;
   transition: background-color 0.3s ease;
+  display: inline-block;
 }
 
 .expand-btn:hover {
@@ -50,27 +113,29 @@ h2 {
 #jogoinicial-container {
   max-width: 400px;
   background-color: #25582a;
-  padding: 20px;
-  border-radius: 10px;
+  padding: 25px 20px;
+  border-radius: 12px;
   margin: 40px auto;
   text-align: center;
   color: #c8f7c5;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+  border: 2px solid #3d7d3a;
 }
 
 #resposta {
-  padding: 8px 10px;
+  padding: 10px 12px;
   font-size: 1em;
-  border-radius: 5px;
+  border-radius: 6px;
   border: none;
-  width: 70%;
-  margin-bottom: 10px;
+  width: 75%;
+  margin-bottom: 12px;
 }
 
 #checagem {
   background-color: #7ecc83;
   border: none;
-  padding: 8px 20px;
-  border-radius: 20px;
+  padding: 10px 24px;
+  border-radius: 25px;
   font-weight: 700;
   cursor: pointer;
   color: #1b3a24;
@@ -82,9 +147,10 @@ h2 {
 }
 
 #mensagem {
-  margin-top: 15px;
+  margin-top: 20px;
   font-weight: 700;
   min-height: 22px;
+  font-size: 1.1em;
 }
 
 #site-content {
