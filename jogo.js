@@ -8,7 +8,7 @@ const conteudoSite       = document.getElementById('conteudo-site');
 const palavraCorreta     = 'campo';  
 const palavraBaguncada   = 'acmpo';  
 
-palavraEmbaralhada.textContent = palavraBaguncada;
+palavraEmbaralhada.textContent = palavraEmbaralhada;
 
 botaoVerificar.addEventListener('click', () => {
   const resposta = entradaResposta.value.trim().toLowerCase();
